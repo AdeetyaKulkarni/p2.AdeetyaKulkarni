@@ -1,2 +1,2 @@
 # p2.AdeetyaKulkarni
-Project 2 for HCI class
+Project 1 for Human Computer Interaction course at Texas Tech University
