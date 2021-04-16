@@ -66,7 +66,7 @@ class Meter{
         f.tipVal.modifyXY(f.centerX + f.radius*cos(f.radian), f.centerY + f.radius*sin(f.radian));
       }
       else{
-        print("Fuel GONE!");
+        //print("Fuel GONE!");
       }
     }
      
@@ -263,28 +263,34 @@ void draw(){
    
    switch (warningIdx){
    
-     case 1: {image(bL, 280, 425, 50, 50);break;}
-     case 2: {image(cE, 570, 173, 50, 50);break;}
-     case 3: {image(dO, 257, 400, 50, 50);break;}
-     case 4: {image(fL, 396, 422, 50, 50);break;}
+     case 1: {image(bL, 320, 425, 50, 50);break;}
+     case 2: {image(cE, 1011, 108, 50, 50);break;}
+     case 3: {image(dO, 214, 351, 50, 50);break;}
+     case 4: {image(fL, 396, 425, 50, 50);break;}
      case 5: {image(sB, 150, 303, 50, 50);break;}
-     case 6: {image(sC, 570, 173, 50, 50);break;}
-     case 7: {image(tP, 570, 173, 50, 50);break;}
-     case 8: {image(eT, 570, 173, 50, 50);break;}
-     case 0: {
-     image(bL, 280, 425, 50, 50);
-     image(cE, 570, 173, 50, 50);
-     image(dO, 257, 400, 50, 50);
-     image(fL, 396, 422, 50, 50);
+     case 6: {image(sC, 1082, 429, 50, 50);break;}
+     case 7: {image(tP, 1020, 487, 50, 50);break;}
+     case 8: {image(eT, 1086, 104, 50, 50);break;}
+     case 9: {
+     image(bL, 320, 425, 50, 50);
+     image(cE, 1011, 108, 50, 50);
+     image(dO, 214, 351, 50, 50);
+     image(fL, 396, 425, 50, 50);
      image(sB, 150, 303, 50, 50);
-     image(sC, 570, 173, 50, 50);
-     image(tP, 570, 173, 50, 50);
-     image(eT, 570, 173, 50, 50);
+     image(sC, 1082, 429, 50, 50);
+     image(tP, 1020, 487, 50, 50);
+     image(eT, 1086, 104, 50, 50);
               }
      default: {}
 
    
    }
+   
+   textSize(22);
+   text("Refill", 345, 498);
+   text("Safety", 129, 401);
+   text("Engine", 1095, 183);
+   text("Tires", 1095, 517);
    
    
    if(beamIdx == 1){
