@@ -251,6 +251,9 @@ void draw(){
    stroke(255,0,0);
    line(556, 441, f.tipVal.x, f.tipVal.y);
   
+   textSize(20);
+   text("Press W for gas and S for brake",990, 576);
+  
    textSize(32);
    fill(204, 102, 0);
    text(M.getStr(), 775, 398);
